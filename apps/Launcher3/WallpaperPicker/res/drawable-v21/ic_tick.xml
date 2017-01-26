@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2011 The Android Open Source Project
+<!--
+     Copyright (C) 2014 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,6 +15,17 @@
      limitations under the License.
 -->
 
-<com.android.launcher3.AccessibleTabView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/TabIndicator.AppsCustomize" />
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="48dp"
+    android:viewportHeight="48"
+    android:viewportWidth="48"
+    android:width="48dp" >
+
+    <group>
+        <path
+            android:name="tick"
+            android:fillColor="#FFFFFFFF"
+            android:pathData="M18 32.34l-8.34-8.34-2.83 2.83 11.17 11.17 24-24-2.83-2.83z" />
+    </group>
+
+</vector>

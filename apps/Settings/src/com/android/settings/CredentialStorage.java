@@ -393,12 +393,14 @@ public final class CredentialStorage extends Activity {
         if (requestCode == CONFIRM_KEY_GUARD_REQUEST) {
             if (resultCode == Activity.RESULT_OK) {
                 String password = data.getStringExtra(ChooseLockSettingsHelper.EXTRA_KEY_PASSWORD);
-                if (!TextUtils.isEmpty(password)) {
+                /*if (!TextUtils.isEmpty(password)) {
                     // success
                     mKeyStore.password(password);
                     // return to onResume
                     return;
-                }
+                }*/
+                mKeyStore.password(null);//using default password
+                // return to onResume                
             }
             // failed confirmation, bail
             finish();
